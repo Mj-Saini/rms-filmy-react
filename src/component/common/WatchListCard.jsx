@@ -1,4 +1,5 @@
 import React from "react";
+import CommonBtn from "./CommonBtn";
 
 const WatchListCard = ({ card }) => {
     return <>
@@ -13,12 +14,12 @@ const WatchListCard = ({ card }) => {
                         <img className={` xl:ms-[13px] lg:ms-[8px] lg:w-[45%] lg:mt-0 mt-[10px]`} src={card.img2} alt="star img" />
                     </div>
                     <div className={`flex items-center   lg:mt-[20px] mt-[10px] ${card.cardStyling}`}>
-                        <button className="me-[16px] font_inter font-semibold lg:text-[12px] text-[16px] xl:text-[16px] leading-[22.72px] text-[#FFFFFF] cursor-pointer border border-amber-400 lg:px-[26px] sm:px-[15px] px-[26px] py-[10px] rounded-[4px] bg-gradient-to-r from-[#F2CD75] to-[#A97424]  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424] duration-700">
-                            Watchlist
-                        </button>
-
-                        <button className="me-[15px]  xl:mt-0 font_inter lg:text-[12px] text-[16px] font-semibold xl:text-[16px] leading-[22.72px] text-[#FFFFFF] cursor-pointer border-1  lg:px-[26px] sm:px-[15px] px-[26px] py-[10px]   rounded-[4px] border-amber-400
-                          hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424] duration-700">Trailer</button>
+                        <span >
+                            <CommonBtn btnName={' Watchlist'} btnStyling="bg-gradient-to-r from-[#F2CD75] to-[#A97424]  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424] lg:px-[26px] sm:px-[15px] px-[15px] py-[10px] me-[16px] lg:text-[12px] text-[16px] xl:text-[16px] " />
+                        </span>
+                        <span >
+                            <CommonBtn btnName={'Trailer'} btnStyling="  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424] lg:px-[23px] sm:px-[15px] px-[15px] py-[10px]  text-[16px] " />
+                        </span>
                     </div>
                 </div>
             </div>
@@ -44,10 +45,6 @@ export const MovieCards = ({ card }) => {
                 <img className="mt-[8px]" src={card.img2} alt="star img" />
             </div>
         </div>
-
-
-
-
     </>
 }
 

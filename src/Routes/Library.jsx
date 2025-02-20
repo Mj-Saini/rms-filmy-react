@@ -1,13 +1,21 @@
 import React from "react";
 // import RMS_LOGO_img from "../src/assets/Png/RMS_LOGO_img.Png";
-import herosection_film_img from "../assets/Png/herosection_film_img.Png";
-import herosection_film_2nd_img from "../assets/Png/herosection_film_2nd_img.Png";
+// import herosection_film_img from "../assets/Png/herosection_film_img.Png";
+// import herosection_film_2nd_img from "../assets/Png/herosection_film_2nd_img.Png";
+
+import herosection_movie_slider_img1 from "../assets/PNG/herosection_movie_slider_img1.png"
+import herosection_movie_slider_img2 from "../assets/PNG/herosection_movie_slider_img2.png"
+import herosection_movie_slider_img3 from "../assets/PNG/herosection_movie_slider_img3.png"
+import herosection_movie_slider_img4 from "../assets/PNG/herosection_movie_slider_img4.png"
+import herosection_movie_slider_img5 from "../assets/PNG/herosection_movie_slider_img5.png"
+import herosection_movie_slider_img6 from "../assets/PNG/herosection_movie_slider_img6.png"
+
 import tack_img from "../assets/Png/tack_img.Png";
 // import { favorites_cards, watch_cards } from "../component/common/Helper";
 import SliderReact, { FeaturedToday, VideosSlider, ViewedRecently } from "../component/SliderReact";
-import WatchListCard from "../component/common/WatchListCard";
+// import WatchListCard from "../component/common/WatchListCard";
 import robin_hood_img from "../assets/PNG/robin_hood_img.png"
-import { Download_icon, SliderArrow } from "../component/common/Icons";
+import { Download_icon, Search_icon, SliderArrow } from "../component/common/Icons";
 import star_img_fad from "../assets/PNG/star_img_fad.png";
 import linear_hover from "../assets/PNG/linear_hover.png";
 import dotted_line from "../assets/PNG/dotted_line.png";
@@ -23,6 +31,7 @@ import viewed_absolute_img from "../assets/PNG/viewed_absolute_img.png"
 import { favorites_cards, Rating_cards, Viewed_cards } from "../component/common/Helper";
 import viewed_ellips from "../assets/PNG/viewed_ellips.png"
 import video_ellips from "../assets/PNG/video_ellips.png"
+import CommonBtn from "../component/common/CommonBtn";
 
 
 
@@ -30,60 +39,67 @@ import video_ellips from "../assets/PNG/video_ellips.png"
 const Library = () => {
   return <>
     {/*  this code used herosection pendding responsive and images different  slider */}
-    {/* <div className="max-w-[1140px] px-3 mx-auto ">
+    <div className="max-w-[1140px] px-3 mx-auto ">
       <div className="relative">
         <div className="absolute top-[50px] left-[-15%]">
-          <img src={tack_img} alt="img" />
+          <img className="xl:block hidden" src={tack_img} alt="img" />
         </div>
       </div>
 
-      <div className="flex flex-wrap flex-row items-center">
-        <div className="lg:w-6/12 px-3">
-          <p className="font-bold text-[55px] font_poppins leading-[78.11px] text-[white]">
+      <div className="flex flex-wrap flex-row items-center justify-center md:justify-between">
+        <div className="md:w-6/12 sm:w-10/12 w-12/12 px-3 text-center md:text-start ">
+          <p className="font-bold lg:text-[55px] md:text-[40px] sm:text-[30px] text-[27px] font_poppins lg:leading-[78.11px] text-[white]">
             Customer <span className="clr_linear_yellow">Review </span> sites movies
           </p>
 
           <p className="font_poppins text-[white]  font-semibold leading-[25.6px] text-[16px] opacity-[90%] mt-[10px]">
             Csras lectus nunc venenatis incidunt id quis malesuada
           </p>
-          <p className="font_poppins  text-[16px] font-normal leading-[25.6px] text-[white] mt-[10px] ">
+          <p className="font_poppins  sm:text-[16px] text-[14px] font-normal dm:leading-[25.6px] text-[white] mt-[10px] ">
             Amet suscipit risus nulla libero porta purus id rhoncus emper faucibus risus cursus dibero ipsum tempus rhoncus dignissi massa cursus tortor.
           </p>
 
-          <div className="flex w-[343px] justify-between items-center input_seacrh_border rounded-[127px] mt-[40px]">
+          <div className="flex sm:w-[343px] w-[290px] justify-between items-center input_seacrh_border rounded-[127px] sm:mt-[40px] mt-[30px] mx-auto md:mx-0">
             <input
               className="ms-[20px] me-[30px] w-full font-normal text-[14px] leading-[19.88px] font_poppins text-white outline-0 placeholder-white"
               type="text"
               placeholder="Search"
             />
             <span>
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25" r="25" fill="url(#paint0_linear_214_2856)" />
-                <path d="M23 31C24.775 30.9996 26.4988 30.4054 27.897 29.312L32.293 33.708L33.707 32.294L29.311 27.898C30.405 26.4997 30.9996 24.7754 31 23C31 18.589 27.411 15 23 15C18.589 15 15 18.589 15 23C15 27.411 18.589 31 23 31ZM23 17C26.309 17 29 19.691 29 23C29 26.309 26.309 29 23 29C19.691 29 17 26.309 17 23C17 19.691 19.691 17 23 17Z" fill="white" />
-                <defs>
-                  <linearGradient id="paint0_linear_214_2856" x1="0" y1="0" x2="50" y2="50" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#F2CD75" />
-                    <stop offset="1" stop-color="#A97424" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <Search_icon />
             </span>
           </div>
-
-
-
-
         </div>
-        <div className="lg:w-3/12 px-2">
-          <img className="translate-y-[-10%]" src={herosection_film_img} alt="movie_img" />
+
+        {/* <All_images  /> */}   {/* ya tag slider k liya use kiya hai jo ki shi nhi laga */}
+        <div className="md:w-3/12 w-6/12 px-2 lg:h-[600px] md:h-[500px] h-[400px] relative overflow-hidden mt-[30px] md:mt-0">
+          <div className="slider ">
+            <img className="mt-4 w-full" src={herosection_movie_slider_img1} alt="movie_img" />
+            <img className="mt-4 w-full" src={herosection_movie_slider_img2} alt="movie_img" />
+            <img className="mt-4 w-full" src={herosection_movie_slider_img3} alt="movie_img" />
+
+            <img className="mt-4 w-full" src={herosection_movie_slider_img1} alt="movie_img" />
+            <img className="mt-4 w-full" src={herosection_movie_slider_img2} alt="movie_img" />
+            <img className="mt-4 w-full" src={herosection_movie_slider_img3} alt="movie_img" />
+          </div>
         </div>
-        <div className="lg:w-3/12 px-2">
-          <img className="translate-y-[-3%]" src={herosection_film_2nd_img} alt="movie_img" />
+
+        <div className="md:w-3/12 w-6/12 px-2 lg:h-[600px] md:h-[500px] h-[400px] relative overflow-hidden mt-[30px] md:mt-0">
+          <div className="slider2 ">
+            <img className="mt-4 w-full" src={herosection_movie_slider_img4} alt="movie_img" />
+            <img className="mt-4 w-full" src={herosection_movie_slider_img5} alt="movie_img" />
+            <img className="mt-4 w-full" src={herosection_movie_slider_img6} alt="movie_img" />
+
+            <img className="mt-4 w-full" src={herosection_movie_slider_img4} alt="movie_img" />
+            <img className="mt-4 w-full" src={herosection_movie_slider_img5} alt="movie_img" />
+            <img className="mt-4 w-full" src={herosection_movie_slider_img6} alt="movie_img" />
+          </div>
         </div>
+
 
       </div>
 
-    </div> */}
+    </div>
 
     {/******************************Watch vides **********************/}
     <div className="relative">
@@ -207,7 +223,7 @@ const Library = () => {
             </p>
             <img className="lg:mt-[6px]" src={star_img_fad} alt="star_img" />
             <p className="font-normal text-[16px] leading-[25px] text-white opacity-[70%] lg:mt-[20px] mt-[10px]" >
-              1.4K reviews
+              4.4K reviews
             </p>
             <div className="flex gap-4 items-center mt-[20px]">
               <p className="font-normal text-[16px]  leading-[25px] text-[white] opacity-[80%]">
@@ -239,16 +255,13 @@ const Library = () => {
               </p>
               <div><img src={rating_fifth_img} alt="rating img" /></div>
             </div>
-            
-            <button className="flex px-[14px] cursor-pointer whitespace-nowrap items-center py-[10px] border-1 border-amber-300 rounded-[4px] font_inter font-semibold sm:text-[16px] text-[12px] text-white lg:mt-[59px] mt-[15px] transition-all duration-500 bg-gradient-to-r from-[#F2CD75] to-[#A97424] hover:bg-white hover:text-transparent hover:bg-clip-text hover:border-amber-300  hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424]">
-              See All Reviews
-            </button>
+
+            <span >
+              <CommonBtn btnName={'See All Reviews'} btnStyling="bg-gradient-to-r from-[#F2CD75] to-[#A97424]  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424] lg:px-[26px] sm:px-[15px] px-[14px] py-[10px]  sm:text-[12px]  text-[16px] lg:mt-[59px] mt-[30px]" />
+            </span>
 
 
 
-            {/* <button className=" transition-all duration-500 bg-gradient-to-r from-[#F2CD75] to-[#A97424] hover:bg-transparent hover:text-transparent hover:bg-clip-text">
-              All Viewed
-            </button> */}
           </div>
           <div className="xl:w-7/12 lg:w-8/12  lg:px-3 sm:flex w-12/12 ">
             {Rating_cards.map((card, i) => (
@@ -282,15 +295,12 @@ const Library = () => {
         </p>
         {/* <ViewedRecently /> */}
         <SliderReact mapData={Viewed_cards} />
-        <button className="flex px-[14px] cursor-pointer whitespace-nowrap mx-auto py-[10px] text-center border-1 border-amber-400 font_inter font-semibold sm:text-[16px] text-[12px] text-white lg:mt-[60px] mt-[30px] transition-all duration-500 bg-gradient-to-r from-[#F2CD75] to-[#A97424] hover:bg-transparent hover:text-transparent hover:bg-clip-text rounded-[4px]">
+        {/* <button className=" font_inter font-semibold sm:text-[16px] text-[12px] text-white lg:mt-[60px] mt-[30px] transition-all duration-500 bg-gradient-to-r from-[#F2CD75] to-[#A97424] hover:bg-transparent hover:text-transparent hover:bg-clip-text rounded-[4px]">
           All Viewed
-        </button>
-
-
-
-
-
-
+        </button> */}
+        <span className="flex justify-center items-center">
+          <CommonBtn btnName={'All Viewed'} btnStyling="bg-gradient-to-r from-[#F2CD75] to-[#A97424]  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424]  px-[14px] py-[10px]  text-[16px] lg:mt-[60px] mt-[30px]" />
+        </span>
       </div>
     </div>
 

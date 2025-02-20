@@ -71,3 +71,40 @@ body{
 .MuiAccordion-heading{
     color: white !important;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.slider {
+  animation: scroll 8s linear infinite;
+
+}
+
+
+
+@keyframes scroll2 {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.slider2 {
+  animation: scroll2 8s linear infinite;
+
+}
+.bell_hover:hover svg path {
+    fill:linear-gradient(135deg, #F2CD75 0%, #A97424 100%);
+}
+
+.scroll_hide::-webkit-scrollbar{
+  display: none;
+}

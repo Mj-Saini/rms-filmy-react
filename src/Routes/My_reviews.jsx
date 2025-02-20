@@ -16,6 +16,7 @@ import dotted_line from "../assets/PNG/dotted_line.png"
 import robin_hood_img from "../assets/PNG/robin_hood_img.png"
 import star_img_fad from "../assets/PNG/star_img_fad.png"
 import comedy_absolute from "../assets/PNG/comedy_absolute.png"
+import CommonBtn from "../component/common/CommonBtn";
 
 
 const My_reviews = () => {
@@ -110,9 +111,13 @@ const My_reviews = () => {
                 Robin Hood
               </p>
 
-              <button className="font_inter font-semibold lg:text-[12px] sm:text-[16px] text-[12px] xl:text-[16px] leading-[22.72px] text-[#FFFFFF] cursor-pointer border border-amber-400 px-[14px] sm:py-[10px] py-[6px] rounded-[4px] bg-gradient-to-r from-[#F2CD75] to-[#A97424]  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424] duration-700">
+              <span >
+                <CommonBtn btnName={'  Join Now'} btnStyling="bg-gradient-to-r from-[#F2CD75] to-[#A97424]  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424] lg:px-[26px] sm:px-[15px] px-[15px] py-[10px] ms-[20px]" />
+              </span>
+              
+              {/* <button className="font_inter font-semibold lg:text-[12px] sm:text-[16px] text-[12px] xl:text-[16px] leading-[22.72px] text-[#FFFFFF] cursor-pointer border border-amber-400 px-[14px] sm:py-[10px] py-[6px] rounded-[4px] bg-gradient-to-r from-[#F2CD75] to-[#A97424]  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#F2CD75] hover:to-[#A97424] duration-700">
                 Join Now
-              </button>
+              </button> */}
             </div>
 
             <img className="mt-[16px]" src={star_img_fad} alt="star_img" />

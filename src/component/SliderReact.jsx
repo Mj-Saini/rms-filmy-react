@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Slider from 'react-slick'
 import WatchListCard, { MovieCards } from './common/WatchListCard'
 import { featured_cards, Populat_movie_cards, video_cards, Viewed_cards } from './common/Helper'
@@ -6,6 +6,7 @@ import { SliderArrow, Videos_icons } from './common/Icons'
 // import feature_img1 from "../assets/PNG/featured_img1.png"
 
 export const VideosSlider = () => {
+    const [activeArrow, setActiveArrow] = useState("");
     const sliderRef = useRef(null)
     console.log(sliderRef);
     var settings = {
@@ -46,12 +47,23 @@ export const VideosSlider = () => {
         <>
             <div className='relative'>
                 <div >
-                    <span onClick={() => sliderRef.current.slickPrev()
-                    } className='lg:w-[38px] lg:h-[38px] w-[32px] h-[32px] absolute z-20  xl:top-[50%] xl:left-[-7%] top-0 sm:right-[90px] right-[80px]  flex items-center cursor-pointer  duration-300 active:brightness-125 active:bg-gradient-to-r active:from-[#F2CD75] active:to-[#A97424] justify-center border  border-amber-200 rounded-full -scale-105  '>
+                    <span
+                        onClick={() => {
+                            sliderRef.current.slickPrev();
+                            setActiveArrow("left");
+                        }}
+                        className={`sm:w-[38px]  sm:h-[38px] h-[30px] w-[30px] absolute z-20 xl:top-[50%] xl:left-[-7%] sm:top-0  sm:right-[80px] top-[10px] right-[60px]  flex items-center cursor-pointer justify-center border  border-amber-200 rounded-full -scale-105 ${activeArrow === "left" ? "bg-gradient-to-r from-[#F2CD75] to-[#A97424] text-white" : ""}`}
+                    >
                         <SliderArrow />
                     </span>
-                    <span onClick={() => sliderRef.current.slickNext()
-                    } className='lg:w-[38px] lg:h-[38px] w-[33px] h-[33px] z-20 flex items-center  absolute xl:top-[50%] xl:right-[-7%] top-0 sm:right-[25px] right-[20px] cursor-pointer  duration-300 active:brightness-125 active:bg-gradient-to-r active:from-[#F2CD75] active:to-[#A97424] justify-center border border-amber-200 rounded-full'>
+                    <span
+                        onClick={() => {
+                            sliderRef.current.slickNext();
+                            setActiveArrow("right");
+                        }}
+                        className={`sm:w-[38px]  sm:h-[38px] h-[30px] w-[30px] z-20 flex items-center  absolute xl:top-[50%] xl:right-[-7%] sm:top-0  sm:right-0 top-[10px] right-[15px] cursor-pointer justify-center border border-amber-200 rounded-full ${activeArrow === "right" ? "bg-gradient-to-r from-[#F2CD75] to-[#A97424] text-white" : ""
+                            }`}
+                    >
                         <SliderArrow />
                     </span>
                 </div>
@@ -85,6 +97,7 @@ export const VideosSlider = () => {
 
 
 const SliderReact = ({ mapData }) => {
+    const [activeArrow, setActiveArrow] = useState("");
     const sliderRef = useRef(null)
     console.log(sliderRef);
     var settings = {
@@ -131,12 +144,23 @@ const SliderReact = ({ mapData }) => {
     return (
         <div className='relative'>
             <div >
-                <span onClick={() => sliderRef.current.slickPrev()
-                } className='lg:w-[38px] lg:h-[38px] w-[32px] h-[32px] absolute z-20  xl:top-[50%] xl:left-[-7%] top-0 sm:right-[90px] right-[80px]  flex items-center cursor-pointer  duration-300 active:brightness-125 active:bg-gradient-to-r active:from-[#F2CD75] active:to-[#A97424] justify-center border  border-amber-200 rounded-full -scale-105 '>
+                <span
+                    onClick={() => {
+                        sliderRef.current.slickPrev();
+                        setActiveArrow("left");
+                    }}
+                    className={`sm:w-[38px]  sm:h-[38px] h-[30px] w-[30px] absolute z-20 xl:top-[50%] xl:left-[-7%] sm:top-0  sm:right-[80px] top-[10px] right-[60px]  flex items-center cursor-pointer justify-center border  border-amber-200 rounded-full -scale-105 ${activeArrow === "left" ? "bg-gradient-to-r from-[#F2CD75] to-[#A97424] text-white" : ""}`}
+                >
                     <SliderArrow />
                 </span>
-                <span onClick={() => sliderRef.current.slickNext()
-                } className='lg:w-[38px] lg:h-[38px] w-[33px] h-[33px] z-20 flex items-center  absolute xl:top-[50%] xl:right-[-7%] top-0 sm:right-[25px] right-[20px] cursor-pointer  duration-300 active:brightness-125 active:bg-gradient-to-r active:from-[#F2CD75] active:to-[#A97424] justify-center border border-amber-200 rounded-full'>
+                <span
+                    onClick={() => {
+                        sliderRef.current.slickNext();
+                        setActiveArrow("right");
+                    }}
+                    className={`sm:w-[38px]  sm:h-[38px] h-[30px] w-[30px] z-20 flex items-center  absolute xl:top-[50%] xl:right-[-7%] sm:top-0  sm:right-0 top-[10px] right-[15px] cursor-pointer justify-center border border-amber-200 rounded-full ${activeArrow === "right" ? "bg-gradient-to-r from-[#F2CD75] to-[#A97424] text-white" : ""
+                        }`}
+                >
                     <SliderArrow />
                 </span>
             </div>
@@ -305,6 +329,7 @@ export const ViewedRecently = () => {
 
 
 export const MovieImageSlider = ({ movieData }) => {
+    const [activeArrow, setActiveArrow] = useState("");
     const sliderRef = useRef(null)
     console.log(sliderRef);
     var settings = {
@@ -349,12 +374,23 @@ export const MovieImageSlider = ({ movieData }) => {
     return (
         <div className='relative'>
             <div >
-                <span onClick={() => sliderRef.current.slickPrev()
-                } className='lg:w-[38px] lg:h-[38px] w-[32px] h-[32px] absolute z-20  xl:top-[50%] xl:left-[-7%] top-0 sm:right-[90px] right-[80px]  flex items-center cursor-pointer  duration-300 active:brightness-125 active:bg-gradient-to-r active:from-[#F2CD75] active:to-[#A97424] justify-center border  border-amber-200 rounded-full -scale-105 '>
+                <span
+                    onClick={() => {
+                        sliderRef.current.slickPrev();
+                        setActiveArrow("left");
+                    }}
+                    className={`sm:w-[38px]  sm:h-[38px] h-[30px] w-[30px] absolute z-20 xl:top-[50%] xl:left-[-7%] sm:top-0  sm:right-[80px] top-[10px] right-[60px]  flex items-center cursor-pointer justify-center border  border-amber-200 rounded-full -scale-105 ${activeArrow === "left" ? "bg-gradient-to-r from-[#F2CD75] to-[#A97424] text-white" : ""}`}
+                >
                     <SliderArrow />
                 </span>
-                <span onClick={() => sliderRef.current.slickNext()
-                } className='lg:w-[38px] lg:h-[38px] w-[33px] h-[33px] z-20 flex items-center  absolute xl:top-[50%] xl:right-[-7%] top-0 sm:right-[25px] right-[20px] cursor-pointer  duration-300 active:brightness-125 active:bg-gradient-to-r active:from-[#F2CD75] active:to-[#A97424] justify-center border border-amber-200 rounded-full'>
+                <span
+                    onClick={() => {
+                        sliderRef.current.slickNext();
+                        setActiveArrow("right");
+                    }}
+                    className={`sm:w-[38px]  sm:h-[38px] h-[30px] w-[30px] z-20 flex items-center  absolute xl:top-[50%] xl:right-[-7%] sm:top-0  sm:right-0 top-[10px] right-[15px] cursor-pointer justify-center border border-amber-200 rounded-full ${activeArrow === "right" ? "bg-gradient-to-r from-[#F2CD75] to-[#A97424] text-white" : ""
+                        }`}
+                >
                     <SliderArrow />
                 </span>
             </div>
@@ -367,6 +403,83 @@ export const MovieImageSlider = ({ movieData }) => {
         </div>
     )
 }
+
+//================ya code  library k herosection k slider ka hai  jo slider bnya tha vo============
+// export const All_images = () => {
+//     // const sliderRef = useRef(null)
+//     // console.log(sliderRef);
+//     var settings = {
+//         dots: false,
+//         infinite: true,
+//         speed: 500,
+//         arrows: false,
+//         autoplay: true,
+//         autoplaySpeed: 1000,
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         // initialSlide: 0,
+//         responsive: [
+//             {
+//                 breakpoint: 1250,
+//                 settings: {
+//                     slidesToShow: 2.7,
+//                     slidesToScroll: 1,
+//                 }
+//             },
+//             {
+//                 breakpoint: 1070,
+//                 settings: {
+//                     slidesToShow: 2,
+//                     slidesToScroll: 1,
+//                     // initialSlide: 2
+//                 }
+//             },
+//             {
+//                 breakpoint: 1023,
+//                 settings: {
+//                     slidesToShow: 3,
+//                     slidesToScroll: 1
+//                 }
+//             },
+//             {
+//                 breakpoint: 700,
+//                 settings: {
+//                     slidesToShow: 1.7,
+//                     slidesToScroll: 1
+//                 }
+//             },
+//             {
+//                 breakpoint: 400,
+//                 settings: {
+//                     slidesToShow: 1,
+//                     slidesToScroll: 1
+//                 }
+//             }
+//         ]
+//     }
+//     return (
+//         <>
+//             <div>
+//                 <Slider  {...settings}>
+//                     {Customer_Review_cards.map((card, i) => (
+//                         <div className='flex flex-row flex-wrap'>
+//                             <div className="lg:w-12/12 px-2 ">
+//                                 <img className='w-full' src={card.img} alt="movie_img" />
+//                                 <img className="mt-[20px]" src={card.img} alt="movie_img" />
+//                                 <img className="mt-[20px]" src={card.img} alt="movie_img" />
+//                             </div>
+//                             <div className="lg:w-3/12 px-2 ">
+//                                 <img src={card.img} alt="movie_img" />
+//                                 <img className="mt-[20px]" src={card.img} alt="movie_img" />
+//                                 <img className="mt-[20px]" src={card.img} alt="movie_img" />
+//                             </div>
+//                         </div>
+//                     ))}
+//                 </Slider>
+//             </div>
+//         </>
+//     )
+// }
 
 
 

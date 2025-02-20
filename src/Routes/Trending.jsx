@@ -3,9 +3,10 @@ import React from "react";
 const Trending = () => {
   return <div>
 
-    <h1 className="text-[white]">
-      hello_trending
-    </h1>
+    <div className="max-w-[1140px] px-3 mx-auto flex items-center justify-center">
+      <h1 className="text-[200px] text-white mt-[10%]">Trending</h1>
+    </div>
+
   </div>;
 };
 
