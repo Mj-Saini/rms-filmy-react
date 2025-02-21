@@ -300,10 +300,6 @@ const History = () => {
             ))}
 
 
-
-
-
-
             {/* {showAllData &&
               Related_history_all_data.map((card, i) => (
                 <div key={i} className="mt-[10px]">

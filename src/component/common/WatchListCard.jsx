@@ -47,6 +47,29 @@ export const MovieCards = ({ card }) => {
         </div>
     </>
 }
+export const DashboardCards = ({ card }) => {
+    return <>
+        <div className=" mx-1 border border-amber-50/25 rounded-[12px] px-[7px] pt-[7px] pb-[16px] mt-[30px]">
+            <div className="overflow-hidden rounded-[12px]">
+                <img className="duration-500 w-full hover:scale-110 " src={card.img} alt="movie_img" />
+            </div>
+
+            <p className="font_poppins font-medium text-[13px] leading-[21px] text-white mt-[9px]">
+                {card.heading}
+            </p>
+
+            <div className="flex items-center mt-[4px]">
+                <p className="font_poppins font-normal text-[12px] leading-[19px] text-white opacity-70">
+                    {card.Views}
+                </p>
+                <p className="font_poppins ms-[13px] font-normal  text-[12px] leading-[19px] text-white opacity-70">
+                    {card.Month}
+                </p>
+            </div>
+            <img className="mt-[16px]" src={card.img2} alt="star img" />
+        </div>
+    </>
+}
 
 
 

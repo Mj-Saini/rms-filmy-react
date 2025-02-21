@@ -86,8 +86,6 @@ body{
 
 }
 
-
-
 @keyframes scroll2 {
   0% {
     transform: translateY(-50%);
@@ -107,4 +105,16 @@ body{
 
 .scroll_hide::-webkit-scrollbar{
   display: none;
+}
+
+.bg_hover:hover{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.slick-dots li button:before {
+    color:white !important;  /* Change dot color */
+    font-size: 12px;  /* Adjust dot size */
+}
+
+.slick-dots li.slick-active button:before {
+    color: white !important;  /* Active dot color */
 }

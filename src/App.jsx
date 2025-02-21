@@ -8,6 +8,9 @@ import { Routes, Route } from "react-router-dom";
 import Nav from "./component/common/Nav";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "./component/common/Footer";
+import FAQs from "./component/common/FAQs";
+
 
 function App() {
   return (

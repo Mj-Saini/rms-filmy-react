@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import Slider from 'react-slick'
-import WatchListCard, { MovieCards } from './common/WatchListCard'
-import { featured_cards, Populat_movie_cards, video_cards, Viewed_cards } from './common/Helper'
+import WatchListCard, { DashboardCards, MovieCards } from './common/WatchListCard'
+import { featured_cards, video_cards, Viewed_cards } from './common/Helper'
 import { SliderArrow, Videos_icons } from './common/Icons'
 // import feature_img1 from "../assets/PNG/featured_img1.png"
 
@@ -480,6 +480,100 @@ export const MovieImageSlider = ({ movieData }) => {
 //         </>
 //     )
 // }
+
+
+export const DashboardSlider = ({ ProfileDashboard }) => {
+    const [activeArrow, setActiveArrow] = useState("");
+    const sliderRef = useRef(null)
+    console.log(sliderRef);
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: true,
+                    // autoplay: true,
+                    // autoplaySpeed: 500,
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true,
+                    // initialSlide: 2
+                    // autoplay: true,
+                    // autoplaySpeed: 500,
+                }
+            },
+            {
+                breakpoint: 610,
+                settings: {
+                    slidesToShow: 1.7,
+                    slidesToScroll: 1,
+                    dots: true,
+                    // initialSlide: 2
+                    // autoplay: true,
+                    // autoplaySpeed: 500,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    // autoplay: true,
+                    // autoplaySpeed: 500,
+                }
+            }
+        ]
+    }
+    return (
+        <div className='relative'>
+            <div className='xl:block hidden'>
+                <span
+                    onClick={() => {
+                        sliderRef.current.slickPrev();
+                        setActiveArrow("left");
+                    }}
+                    className={`sm:w-[38px]  sm:h-[38px]  h-[30px] w-[30px] absolute z-20 top-[-14%] right-[7%] flex items-center cursor-pointer justify-center border  border-amber-200 rounded-full -scale-105 ${activeArrow === "left" ? "bg-gradient-to-r from-[#F2CD75] to-[#A97424] text-white" : ""}`}
+                >
+                    <SliderArrow />
+                </span>
+                <span
+                    onClick={() => {
+                        sliderRef.current.slickNext();
+                        setActiveArrow("right");
+                    }}
+                    className={`sm:w-[38px]  sm:h-[38px] h-[30px] w-[30px] z-20 top-[-14%] right-[1%] flex items-center  absolute  cursor-pointer justify-center border border-amber-200 rounded-full ${activeArrow === "right" ? "bg-gradient-to-r from-[#F2CD75] to-[#A97424] text-white" : ""
+                        }`}
+                >
+                    <SliderArrow />
+                </span>
+            </div>
+
+            <Slider ref={sliderRef} {...settings}>
+                {ProfileDashboard.map((card, i) => (
+                    <DashboardCards card={card} key={i} />
+                ))}
+            </Slider>
+        </div>
+    )
+}
+
+
+
+
 
 
 

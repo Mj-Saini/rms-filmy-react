@@ -63,6 +63,19 @@ import related_img17 from "../../assets/PNG/related_img17.png"
 import related_img18 from "../../assets/PNG/related_img18.png"
 import related_img19 from "../../assets/PNG/related_img19.png"
 import related_img20 from "../../assets/PNG/related_img20.png"
+import dashboard_img1 from "../../assets/PNG/dashboard_img1/My account/Rectangle 57.png"
+import dashboard_img2 from "../../assets/PNG/dashboard_img2/My account/Rectangle 57.png"
+import dashboard_img3 from "../../assets/PNG/dashboard_img3/My account/Rectangle 57.png"
+import dashboard_img4 from "../../assets/PNG/dashboard_img4/My account/Rectangle 57.png"
+import dashboard_img5 from "../../assets/PNG/dashboard_img5/My account/Rectangle 57.png"
+import dashboard_img6 from "../../assets/PNG/dashboard_img6/My account/Rectangle 57.png"
+import dashboard_img7 from "../../assets/PNG/dashboard_img7/My account/Rectangle 57.png"
+import dashboard_img8 from "../../assets/PNG/dashboard_img8/My account/Rectangle 57.png"
+import dashboard_img9 from "../../assets/PNG/dashboard_img9/My account/Rectangle 57.png"
+import dashboard_img10 from "../../assets/PNG/dashboard_img10/My account/Rectangle 57.png"
+import dashboard_img11 from "../../assets/PNG/dashboard_img11/My account/Rectangle 57.png"
+import dashboard_img13 from "../../assets/PNG/dashboard_img13/My account/Rectangle 57.png"
+
 import { Message_icon, Thumsup_icon, ThumsupDown_icon } from "./Icons";
 
 
@@ -1163,6 +1176,100 @@ export const Related_button_data = [
         month: "1 month ago"
     },
 
+]
+
+export const Playlists_cards = [
+    {
+        img: dashboard_img1,
+        heading: "Sed atvelverra lobortis.",
+        Views: "5.3M views",
+        Month: "2 month ago",
+        img2: star_img,
+    },
+    {
+        img: dashboard_img2,
+        heading: "Sed atvelverra lobortis.",
+        Views: "4.7M views",
+        Month: "1 month ago",
+        img2: star_img,
+    },
+    {
+        img: dashboard_img3,
+        heading: "Simply of the printing",
+        Views: "3.7M views",
+        Month: "1 Week ago",
+        img2: star_img,
+    },
+    {
+        img: dashboard_img4,
+        heading: "Established fact that reader.",
+        Views: "6.1M views",
+        Month: "3 month ago",
+        img2: star_img,
+    },
+]
+
+export const Playlists2_cards = [
+    {
+        img: dashboard_img5,
+        heading: "Printer took a galley of type.",
+        Views: "5.3M views",
+        Month: "2 month ago",
+        img2: star_img_fad,
+    },
+    {
+        img: dashboard_img6,
+        heading: "Ipsum is that it has less.",
+        Views: "4.7M views",
+        Month: "1 month ago",
+        img2: star_img,
+    },
+    {
+        img: dashboard_img7,
+        heading: "The standard chunk.",
+        Views: "3.7M views",
+        Month: "1 Week ago",
+        img2: star_img_fad,
+    },
+    {
+        img: dashboard_img8,
+        heading: "Therefore  repetition.",
+        Views: "6.1M views",
+        Month: "3 month ago",
+        img2: star_img_fad,
+    },
+]
+
+
+export const LikeVideos_cards = [
+    {
+        img: dashboard_img9,
+        heading: "Printer took a galley of type.",
+        Views: "5.3M views",
+        Month: "2 month ago",
+        img2: star_img,
+    },
+    {
+        img: dashboard_img10,
+        heading: "Ipsum is that it has less.",
+        Views: "4.7M views",
+        Month: "1 month ago",
+        img2: star_img,
+    },
+    {
+        img: dashboard_img11,
+        heading: "The standard chunk.",
+        Views: "3.7M views",
+        Month: "1 Week ago",
+        img2: star_img,
+    },
+    {
+        img: dashboard_img13,
+        heading: "Therefore  repetition.",
+        Views: "6.1M views",
+        Month: "3 month ago",
+        img2: star_img,
+    },
 ]
 
 
