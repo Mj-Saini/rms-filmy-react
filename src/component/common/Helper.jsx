@@ -2,22 +2,10 @@
 import video_img from "../../assets/PNG/video_img.png"
 import video_img_2 from "../../assets/PNG/video_img_2.png"
 import star_img from "../../assets/PNG/star_img.png"
-
-
-// import fan_movie_img1 from "../../assets/PNG/fan_movie_img1.png"
-// import fan_movie_img2 from "../../assets/PNG/fan_movie_img2.png"
-// import fan_movie_img3 from "../../assets/PNG/fan_movie_img3.png"
-// import fan_movie_img_4 from "../../assets/PNG/fan_movie_img_4.png"
-
-
-
 import fan_movie_img1 from "../../assets/PNG/fan_movie_img1.png"
 import fan_movie_img2 from "../../assets/PNG/fan_movie_img2.png"
 import fan_movie_img3 from "../../assets/PNG/fan_movie_img3.png"
 import fan_movie_img_4 from "../../assets/PNG/fan_movie_img_4.png"
-
-
-
 import feature_img1 from "../../assets/PNG/featured_img1.png"
 import feature_img2 from "../../assets/PNG/feature_img2.png"
 import feature_img3 from "../../assets/PNG/feature_img3.png"
