@@ -1,6 +1,5 @@
 import { useState } from "react";
 import women_img from "../assets/PNG/women_img.png"
-import tools_img from "../assets/PNG/tools_img.png"
 import p_logo_img from "../assets/PNG/p_logo_img.png"
 import { Bell_icon, Clock_icon, Download_icon, Message_icon, Share_icon, Three_dot_icon, Thumsup_icon, ThumsupDown_icon } from "../component/common/Icons";
 import profile_image from "../assets/PNG/profile_image.png"

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import RMS_LOGO_img from "../../../src/assets/Png/RMS_LOGO_img.Png";
+import RMS_LOGO_img from "../../../src/assets/Png/RMS_LOGO_img.png";
 import { useState } from "react";
 import { Nav_bell_icon, Nav_icon } from "./Icons";
 import CommonBtn from "./CommonBtn";
@@ -15,45 +15,6 @@ const Nav = () => {
   };
 
   return (
-    // <div>
-    //  
-    //   <div >
-    //     <div >
-    //      
-
-    //
-
-    //      
-    //       {/* Hamburger Icon */}
-    //       <div onClick={handleToggleNav} className="lg:hidden z-30 cursor-pointer">
-    //         <div style={{ transform: toggleNav ? "rotate(45deg)" : "rotate(0deg)", transition: "transform 0.3s" }}>
-    //           <span
-    //             style={{
-    //               transform: toggleNav ? "rotate(-5deg) translate(10px, 5px)" : "rotate(0deg)",
-    //               transition: "transform 0.3s",
-    //             }}
-    //             className="block w-8 h-[3px] bg-white mb-[6px]"
-    //           ></span>
-    //           <span
-    //             style={{
-    //               opacity: toggleNav ? 0 : 1,
-    //               transition: "opacity 0.3s",
-    //             }}
-    //             className="block w-8 h-[3px] bg-white mb-[6px]"
-    //           ></span>
-    //           <span
-    //             style={{
-    //               transform: toggleNav ? "rotate(-80deg) translate(14px, 8px)" : "rotate(0deg)",
-    //               transition: "transform 0.3s",
-    //             }}
-    //             className="block w-8 h-[3px] bg-white"
-    //           ></span>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-
 
 
     <div>
