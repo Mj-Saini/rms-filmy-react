@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-import RMS_LOGO_img from "../../../src/assets/Png/RMS_LOGO_img.png";
+// import RMS_LOGO_img from "../../../src/assets/Png/RMS_LOGO_img.png";
+import RMS_LOGO_img from "../../assets/PNG/RMS_LOGO_img.png";
 import { useState } from "react";
 import { Nav_bell_icon, Nav_icon } from "./Icons";
 import CommonBtn from "./CommonBtn";
