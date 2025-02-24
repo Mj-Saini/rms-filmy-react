@@ -10,7 +10,7 @@ import herosection_movie_slider_img4 from "../assets/PNG/herosection_movie_slide
 import herosection_movie_slider_img5 from "../assets/PNG/herosection_movie_slider_img5.png"
 import herosection_movie_slider_img6 from "../assets/PNG/herosection_movie_slider_img6.png"
 
-import tack_img from "../assets/Png/tack_img.Png";
+import tack_img from "../assets/PNG/tack_img.png"
 // import { favorites_cards, watch_cards } from "../component/common/Helper";
 import SliderReact, { FeaturedToday, VideosSlider, ViewedRecently } from "../component/SliderReact";
 // import WatchListCard from "../component/common/WatchListCard";

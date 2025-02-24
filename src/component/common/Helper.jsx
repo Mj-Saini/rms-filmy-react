@@ -1247,7 +1247,7 @@ export const LikeVideos_cards = [
         heading: "Printer took a galley of type.",
         Views: "5.3M views",
         Month: "2 month ago",
-        img2: star_img,
+        img2: star_img_fad,
     },
     {
         img: dashboard_img10,
@@ -1261,14 +1261,14 @@ export const LikeVideos_cards = [
         heading: "The standard chunk.",
         Views: "3.7M views",
         Month: "1 Week ago",
-        img2: star_img,
+        img2: star_img_fad,
     },
     {
         img: dashboard_img13,
         heading: "Therefore  repetition.",
         Views: "6.1M views",
         Month: "3 month ago",
-        img2: star_img,
+        img2: star_img_fad,
     },
 ]
 
