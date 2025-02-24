@@ -4,7 +4,7 @@ import Library from "./Routes/Library";
 import My_reviews from "./Routes/My_reviews";
 import Subscription from "./Routes/Subscription";
 import Trending from "./Routes/Trending";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Nav from "./component/common/Nav";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,6 +13,7 @@ import FAQs from "./component/common/FAQs";
 
 
 function App() {
+  const location=useLocation()
   return (
     <>
       <div>
@@ -24,8 +25,8 @@ function App() {
           <Route path="/Subscription" element={<Subscription />} />
           <Route path="/Trending" element={<Trending />} />
         </Routes>
-        <FAQs />
-        <Footer />
+        {location.pathname !== '/Subscription' && (< FAQs />)}
+        {location.pathname !== '/Subscription' && (<Footer />)}
       </div>
     </>
   );

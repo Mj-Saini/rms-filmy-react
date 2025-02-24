@@ -23,7 +23,7 @@ const Nav = () => {
         <div className="fixed inset-0 bg-black opacity-60 backdrop-blur-3xl z-10"></div>
       )}
       <div className="max-w-[1140px] px-3 mx-auto pt-[10px] pb-[18px] bg-[black] relative z-20">
-        <div className=' bg -white shadow-[0px_4px_20px_0px_#0000001A] px-[30px] py-[20px] rounded-[20px] mt-[20px]'>
+        <div className=' bg -white shadow-[0px_4px_20px_0px_#0000001A]  rounded-[20px] mt-[20px]'>
           <div className="flex justify-between items-center">
             <img className="cursor-pointer" src={RMS_LOGO_img} alt="logo img" />
 
