@@ -24,8 +24,8 @@ function App() {
           <Route path="/Subscription" element={<Subscription />} />
           <Route path="/Trending" element={<Trending />} />
         </Routes>
-        {/* <FAQs />
-        <Footer /> */}
+        <FAQs />
+        <Footer />
       </div>
     </>
   );
